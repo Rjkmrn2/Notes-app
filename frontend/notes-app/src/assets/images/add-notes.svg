@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="850" viewBox="0 0 789.04441 709.8802" role="img" aria-labelledby="title desc">
+	<title id="title">Add Notes Illustration</title>
+	<desc id="desc">Decorative illustration of a notebook with a plus sign and pencil for adding notes.</desc>
+	<defs>
+		<linearGradient id="g1" x1="0" x2="1">
+			<stop offset="0" stop-color="#e6f7ff" />
+			<stop offset="1" stop-color="#ffffff" />
+		</linearGradient>
+		<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.12" />
+		</filter>
+	</defs>
+
+	<!-- Background subtle tone -->
+	<rect width="100%" height="100%" fill="#fff0ce" />
+
+	<!-- Notebook card -->
+	<g transform="translate(131 171)">
+		<rect x="0" y="0" width="520" height="360" rx="18" fill="url(#g1)" filter="url(#shadow)" />
+
+		<!-- Notebook header tab -->
+		<rect x="24" y="-8" width="110" height="18" rx="6" fill="#ffd966" />
+
+		<!-- Lines inside notebook -->
+		<g stroke="#d7e3f2" stroke-width="2" stroke-linecap="round">
+			<line x1="28" y1="44" x2="492" y2="44" />
+			<line x1="28" y1="84" x2="492" y2="84" />
+			<line x1="28" y1="124" x2="492" y2="124" />
+			<line x1="28" y1="164" x2="380" y2="164" />
+			<line x1="28" y1="204" x2="492" y2="204" />
+			<line x1="28" y1="244" x2="380" y2="244" />
+		</g>
+
+		<!-- Small decorative sticky note -->
+		<rect x="360" y="40" width="120" height="94" rx="8" fill="#fff8e1" stroke="#ffe6a7" />
+		<path d="M472 42 L472 132 L442 132" fill="none" stroke="#ffd966" stroke-width="2" stroke-linejoin="round" />
+	</g>
+
+	<!-- Plus action bubble (overlapping notebook) -->
+	<g transform="translate(520 380)">
+		<circle cx="0" cy="0" r="58" fill="#2dd4bf" />
+		<circle cx="0" cy="0" r="58" fill="none" stroke="#059669" stroke-opacity="0.08" />
+		<path d="M-18 0 H18 M0 -18 V18" stroke="#ffffff" stroke-width="8" stroke-linecap="round" />
+	</g>
+
+	<!-- Pencil icon leaning across bottom-right -->
+	<g transform="translate(450 460) rotate(-20)">
+		<rect x="0" y="0" width="160" height="24" rx="4" fill="#ffd966" />
+		<rect x="128" y="0" width="32" height="24" rx="4" fill="#f4a261" />
+		<path d="M160 12 L176 0 L176 24 Z" fill="#4a5568" />
+		<rect x="8" y="4" width="88" height="16" rx="3" fill="#fff" opacity="0.22" />
+	</g>
+
+	<!-- Decorative abstract shapes -->
+	<!-- <g opacity="0.9">
+		<circle cx="120" cy="110" r="24" fill="#e8f9ff" />
+		<circle cx="680" cy="80" r="14" fill="#ffe6f0" />
+		<rect x="48" y="520" width="100" height="16" rx="8" fill="#eef2ff" />
+	</g> -->
+
+</svg>

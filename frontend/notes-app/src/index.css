@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Asimovian&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Asimovian", sans-serif;
+  --color-body-bg: rgb(255, 240, 206);
+  --component-bg: rgb(145, 145, 218);
+  --color-primary: #3396D3;
+  --color-secondary: #EBCB90;
+}
+@layer base{
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-body-bg);
+    overflow: hidden;
+  }
+}
+@layer components{
+  .input-box {
+    @apply w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  .btn-primary{
+    @apply w-full text-sm bg-[rgb(145,145,218)] p-2 rounded my-1 hover:bg-[rgb(93,194,219)];
+  }
+  .icon-btn{
+    @apply text-xl text-slate-300 cursor-pointer hover:text-primary
+  }
+  .input-label{
+    @apply text-xs text-slate-400;
+  }
+
+}

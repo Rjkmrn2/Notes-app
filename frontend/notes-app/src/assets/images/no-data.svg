@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="782.04441" height="701.8802" viewBox="0 0 782.04441 701.8802" role="img" aria-labelledby="title desc">
+	<title id="title">No Data Illustration</title>
+	<desc id="desc">Decorative illustration showing an empty state with a search icon indicating no items found.</desc>
+	<defs>
+		<linearGradient id="bgGrad" x1="0" x2="1">
+			<stop offset="0" stop-color="#e6f7ff" />
+			<stop offset="1" stop-color="#ffffff" />
+		</linearGradient>
+		<filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+			<feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.08" />
+		</filter>
+	</defs>
+
+	<!-- Background subtle tone -->
+	<rect width="100%" height="100%" fill="#fff0ce" />
+
+	<!-- Empty notebook card -->
+	<g transform="translate(110 140)">
+		<rect x="0" y="60" width="560" height="320" rx="20" fill="url(#bgGrad)" stroke="#e6eef9" filter="url(#softShadow)" />
+		
+		<!-- Lines inside notebook (empty state) -->
+		<g stroke="#d7e3f2" stroke-width="2" stroke-linecap="round" opacity="0.5">
+			<line x1="36" y1="130" x2="520" y2="130" />
+			<line x1="36" y1="170" x2="480" y2="170" />
+			<line x1="36" y1="210" x2="520" y2="210" />
+			<line x1="36" y1="250" x2="420" y2="250" />
+		</g>
+	</g>
+
+	<!-- Large magnifying glass (searching) -->
+	<g transform="translate(500 350)">
+		<circle cx="0" cy="-15" r="72" fill="#fff8e1" stroke="#ffe6a7" filter="url(#softShadow)" />
+		<circle cx="0" cy="-15" r="44" fill="#ffffff" stroke="#ffe6a7" stroke-width="2" />
+		<path d="M50 40 L90 80" stroke="#ffd966" stroke-width="12" stroke-linecap="round" />
+		<!-- Crosshairs in magnifying glass -->
+		<path d="M-10 -15 L10 -15 M0 -30 L0 -5" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+	</g>
+
+	<!-- Decorative accent circle (teal like add-notes)
+	<g transform="translate(680 200)" opacity="0.8">
+		<circle cx="0" cy="0" r="48" fill="#2dd4bf" opacity="0.15" />
+	</g> -->
+
+	<!-- Decorative dots matching add-notes style -->
+	<!-- <g opacity="0.7">
+		<circle cx="100" cy="110" r="14" fill="#ffd966" opacity="0.3" />
+		<circle cx="720" cy="600" r="10" fill="#2dd4bf" opacity="0.2" />
+	</g> -->
+
+</svg>
