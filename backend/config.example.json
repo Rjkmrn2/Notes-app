@@ -1,0 +1,4 @@
+{
+  "connectionString": "mongodb+srv://username:password@cluster.mongodb.net/?appName=notesapp"
+}
+
