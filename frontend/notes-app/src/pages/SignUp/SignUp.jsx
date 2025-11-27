@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
-import Passwordinput from '../../components/Input/Passwordinput';
+import Passwordinput from '../../components/Input/PasswordInput';
 import {Link,useNavigate } from 'react-router-dom';
 import { validateEmail } from '../../utils/helper';
 import axiosInstance from '../../utils/axiosInstance';
