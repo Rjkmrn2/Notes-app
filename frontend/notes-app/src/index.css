@@ -1,14 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Asimovian&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Asimovian", sans-serif;
-  --color-body-bg: rgb(255, 240, 206);
-  --component-bg: rgb(145, 145, 218);
-  --color-primary: #3396D3;
+  --font-sans: "Inter", sans-serif;
+
+  --color-body-bg: #F6F8FB;
+  --component-bg: #E0E7FF;
+  --color-primary: #2563EB;
   --color-secondary: #EBCB90;
+
+  --radius-md: 10px;
+
+  --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.18);
+  --shadow-soft: 0 2px 6px rgba(0,0,0,0.06);
+
+  --transition-fast: 160ms ease-in-out;
 }
-@layer base{
+
+@layer base {
   html {
     font-family: var(--font-sans);
   }
@@ -16,20 +25,57 @@
   body {
     background-color: var(--color-body-bg);
     overflow: hidden;
+    color: #1E293B;
   }
 }
-@layer components{
-  .input-box {
-    @apply w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500;
-  }
-  .btn-primary{
-    @apply w-full text-sm bg-[rgb(145,145,218)] p-2 rounded my-1 hover:bg-[rgb(93,194,219)];
-  }
-  .icon-btn{
-    @apply text-xl text-slate-300 cursor-pointer hover:text-primary
-  }
-  .input-label{
-    @apply text-xs text-slate-400;
+
+@layer components {
+
+  .input-label {
+    @apply text-xs text-slate-500 font-medium;
   }
 
+  .input-box {
+    @apply w-full border px-3 py-2 mb-4 transition-all;
+
+    border-color: #CBD5E1;
+    border-radius: var(--radius-md);
+    background: #FFF;
+
+    transition: border-color var(--transition-fast),
+                box-shadow var(--transition-fast),
+                background var(--transition-fast);
+
+    &:hover {
+      border-color: #B5BCC7;
+      background: #FBFBFB;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-focus);
+      background: #FFFFFF;
+    }
+  }
+
+  .btn-primary {
+    @apply w-full text-sm text-white p-2 rounded my-1 font-semibold transition-all;
+
+    background: var(--color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+
+    transition: background var(--transition-fast), box-shadow var(--transition-fast);
+
+    &:hover {
+      background: #1E4ED8;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    &:active {
+      background: #1C46C3;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+    }
+  }
 }
